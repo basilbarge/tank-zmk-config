@@ -133,6 +133,18 @@
             bindings = <&kp LS(D) &kp LS(R) &kp LS(A) &kp LS(M) &kp LS(A) &kp LS(N) &kp LS(O) &kp LS(T) &kp LS(E) &kp RET>;
             label = "DS_DRAMANOTE";
         };
+        DS_undo: DS_undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(U) &kp LS(N) &kp LS(D) &kp LS(O) &kp RET &kp RET>;
+            label = "DS_UNDO";
+        };
+        DS_redo: DS_redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R) &kp LS(E) &kp LS(D) &kp LS(O) &kp RET>;
+            label = "DS_REDO";
+        };
     };
 
     keymap {
@@ -190,7 +202,7 @@
             bindings = <
 &trans  &DS_fix_text  &DS_edit_cherries  &DS_gen_bom  &DS_gen_pdf  &DS_dramanote    &trans        &trans            &trans                  &trans                &trans                    &trans
 &trans  &DS_move      &DS_copy           &DS_trim     &DS_extend   &DS_fillet       &DS_save_all  &DS_fit_and_save  &DS_update_index_block  &DS_open_doc_manager  &DS_open_project_manager  &trans
-&trans  &trans        &trans             &trans       &trans       &trans           &trans        &trans            &trans                  &trans                &trans                    &trans
+&trans  &trans        &trans             &trans       &DS_redo     &DS_undo         &trans        &trans            &trans                  &trans                &trans                    &trans
                                          &trans       &trans       &trans           &trans        &trans            &trans
             >;
 
