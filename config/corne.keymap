@@ -16,7 +16,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <200>;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
         hmr: homerow_mods_right {
@@ -25,7 +25,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <200>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
         layer_1_and_3: layer_1_and_3 {
@@ -76,12 +76,6 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp T &kp E &kp N &kp D &kp ENTER>;
             label = "DS_EXTEND";
-        };
-        DS_fix_text: DS_fix_text {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp MINUS &kp T &kp E &kp X &kp T &kp S &kp T &kp Y &kp L &kp E &kp RET &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(N) &kp LS(D) &kp LS(A) &kp LS(R) &kp LS(D) &kp RET &kp LS(A) &kp LS(R) &kp LS(R) &kp O &kp M &kp LS(S) &kp DOT &kp S &kp H &kp X &kp RET &kp DOT &kp N1 &kp N2 &kp N5 &kp RET &kp N1 &kp RET &kp N0 &kp RET &kp LS(N) &kp RET &kp LS(N) &kp RET &kp LS(N) &kp ENTER>;
-            label = "DS_FIX_TEXT";
         };
         DS_save_all: DS_save_all {
             compatible = "zmk,behavior-macro";
@@ -149,6 +143,18 @@
             bindings = <&kp LS(R) &kp LS(E) &kp LS(D) &kp LS(O) &kp RET>;
             label = "DS_REDO";
         };
+        DS_fix_text: DS_fix_text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp T &kp E &kp X &kp T &kp S &kp T &kp Y &kp L &kp E &kp RET &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(N) &kp LS(D) &kp LS(A) &kp LS(R) &kp LS(D) &kp RET &kp LS(A) &kp LS(R) &kp LS(R) &kp O &kp M &kp LS(S) &kp DOT &kp S &kp H &kp X &kp RET &kp DOT &kp N1 &kp N2 &kp N5 &kp RET &kp N1 &kp RET &kp N0 &kp RET &kp LS(N) &kp RET &kp LS(N) &kp RET &kp LS(N) &kp RET &kp LS(N) &kp RET>;
+            label = "DS_FIX_TEXT";
+        };
+        DS_copy_at: DS_copy_at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(C) &kp LS(O) &kp LS(P) &kp LS(Y) &kp AT &kp RET>;
+            label = "DS_COPY_AT";
+        };
     };
 
     keymap {
@@ -206,7 +212,7 @@
             bindings = <
 &trans  &DS_fix_text  &DS_edit_cherries  &DS_gen_bom  &DS_gen_pdf  &DS_dramanote    &trans        &trans            &trans                  &trans                &trans                    &trans
 &trans  &DS_move      &DS_copy           &DS_trim     &DS_extend   &DS_fillet       &DS_save_all  &DS_fit_and_save  &DS_update_index_block  &DS_open_doc_manager  &DS_open_project_manager  &trans
-&trans  &trans        &trans             &trans       &DS_redo     &DS_undo         &trans        &trans            &trans                  &trans                &trans                    &trans
+&trans  &trans        &DS_copy_at        &trans       &DS_redo     &DS_undo         &trans        &trans            &trans                  &trans                &trans                    &trans
                                          &trans       &trans       &trans           &trans        &trans            &trans
             >;
 
