@@ -216,10 +216,10 @@
 
         Draftsight_PCU {
             bindings = <
-&trans  &DS_fix_text  &DS_edit_cherries  &DS_gen_bom  &DS_gen_pdf  &DS_dramanote    &trans        &trans            &trans                  &trans                &trans                    &trans
-&trans  &DS_move      &DS_copy           &DS_trim     &DS_extend   &DS_fillet       &DS_save_all  &DS_fit_and_save  &DS_update_index_block  &DS_open_doc_manager  &DS_open_project_manager  &DS_close
-&trans  &trans        &DS_copy_at        &trans       &DS_redo     &DS_undo         &trans        &trans            &trans                  &trans                &trans                    &trans
-                                         &trans       &trans       &trans           &trans        &trans            &trans
+&trans  &DS_fix_text          &DS_edit_cherries  &DS_gen_bom               &DS_gen_pdf  &DS_dramanote    &trans  &trans        &trans            &trans                  &trans     &trans
+&trans  &DS_move              &DS_copy           &DS_trim                  &DS_extend   &DS_fillet       &trans  &DS_save_all  &DS_fit_and_save  &DS_update_index_block  &DS_close  &trans
+&trans  &DS_open_doc_manager  &DS_copy_at        &DS_open_project_manager  &DS_redo     &DS_undo         &trans  &trans        &trans            &trans                  &trans     &trans
+                                                 &trans                    &trans       &trans           &trans  &trans        &trans
             >;
 
             label = "Draftsight";
