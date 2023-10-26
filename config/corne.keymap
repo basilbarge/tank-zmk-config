@@ -43,7 +43,7 @@
     };
 
     macros {
-        DS_Move: DS_Move {
+        DS_move: DS_move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp O &kp V &kp E &kp ENTER>;
@@ -188,10 +188,10 @@
 
         Draftsight_PCU {
             bindings = <
-&trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &DS_Move  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &DS_fix_text  &DS_edit_cherries  &DS_gen_bom  &DS_gen_pdf  &DS_dramanote    &trans        &trans            &trans                  &trans                &trans                    &trans
+&trans  &DS_move      &DS_copy           &DS_trim     &DS_extend   &DS_fillet       &DS_save_all  &DS_fit_and_save  &DS_update_index_block  &DS_open_doc_manager  &DS_open_project_manager  &trans
+&trans  &trans        &trans             &trans       &trans       &trans           &trans        &trans            &trans                  &trans                &trans                    &trans
+                                         &trans       &trans       &trans           &trans        &trans            &trans
             >;
 
             label = "Draftsight";
