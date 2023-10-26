@@ -222,7 +222,7 @@
                                                  &trans                    &trans       &trans           &trans  &trans        &trans
             >;
 
-            label = "Draftsight";
+            label = "DS";
         };
 
         Function_Layer {
@@ -233,7 +233,7 @@
                                   &trans            &trans              &trans        &trans      &trans        &trans
             >;
 
-            label = "Function Layer";
+            label = "Func";
         };
     };
 
