@@ -32,13 +32,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_1_AND_3";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 4>;
+            bindings = <&mo 1>, <&mo 3>;
         };
         layer_2_and_4: layer_2_and_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_2_AND_4";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 3>;
+            bindings = <&mo 2>, <&mo 4>;
         };
     };
 
@@ -109,6 +109,8 @@
 &trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "Draftsight";
         };
 
         Function_Layer {
@@ -125,10 +127,5 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        Function_Layer {
-            if-layers = <1 2>;
-            then-layer = <4>;
-        };
     };
 };
