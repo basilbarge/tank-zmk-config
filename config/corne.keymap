@@ -49,6 +49,24 @@
             bindings = <&kp M &kp O &kp V &kp E &kp ENTER>;
             label = "DS_MOVE";
         };
+        DS_copy: DS_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp P &kp Y &kp ENTER>;
+            label = "DS_COPY";
+        };
+        DS_trim: DS_trim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp R &kp I &kp M &kp ENTER>;
+            label = "DS_TRIM";
+        };
+        DS_fillet: DS_fillet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp I &kp L &kp L &kp E &kp T &kp ENTER>;
+            label = "DS_FILLET";
+        };
     };
 
     keymap {
