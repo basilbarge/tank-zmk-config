@@ -186,7 +186,7 @@
             >;
         };
 
-        Draftsight_Layer {
+        Draftsight_PCU {
             bindings = <
 &trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &DS_Move  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
