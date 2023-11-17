@@ -20,6 +20,7 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
             flavor = "tap-preferred";
         };
+
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
@@ -30,6 +31,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             flavor = "tap-preferred";
         };
+
         layer_1_and_3: layer_1_and_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_1_AND_3";
@@ -38,6 +40,7 @@
 
             tapping-term-ms = <400>;
         };
+
         layer_2_and_4: layer_2_and_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_2_AND_4";
@@ -55,108 +58,126 @@
             bindings = <&kp M &kp O &kp V &kp E &kp ENTER>;
             label = "DS_MOVE";
         };
+
         DS_copy: DS_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp O &kp P &kp Y &kp ENTER>;
             label = "DS_COPY";
         };
+
         DS_trim: DS_trim {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp R &kp I &kp M &kp ENTER>;
             label = "DS_TRIM";
         };
+
         DS_fillet: DS_fillet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F &kp I &kp L &kp L &kp E &kp T &kp ENTER>;
             label = "DS_FILLET";
         };
+
         DS_extend: DS_extend {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp T &kp E &kp N &kp D &kp ENTER>;
             label = "DS_EXTEND";
         };
+
         DS_save_all: DS_save_all {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(S) &kp LS(A) &kp LS(V) &kp LS(E) &kp LS(A) &kp LS(L) &kp LS(L) &kp ENTER>;
             label = "DS_SAVE_ALL";
         };
+
         DS_fit_and_save: DS_fit_and_save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(Z) &kp LS(O) &kp LS(O) &kp LS(M) &kp LS(F) &kp LS(I) &kp LS(T) &kp RET &kp LS(S) &kp LS(A) &kp LS(V) &kp LS(E) &kp ENTER>;
             label = "DS_FIT_AND_SAVE";
         };
+
         DS_open_project_manager: DS_open_project_manager {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(O) &kp LS(P) &kp LS(E) &kp LS(N) &kp LS(P) &kp LS(R) &kp LS(O) &kp LS(J) &kp LS(E) &kp LS(C) &kp LS(T) &kp LS(M) &kp LS(A) &kp LS(N) &kp LS(A) &kp LS(G) &kp LS(E) &kp LS(R) &kp RET>;
             label = "DS_OPEN_PROJECT_MANAGER";
         };
+
         DS_open_doc_manager: DS_open_doc_manager {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(O) &kp LS(P) &kp LS(E) &kp LS(N) &kp LS(D) &kp LS(O) &kp LS(C) &kp LS(U) &kp LS(M) &kp LS(E) &kp LS(N) &kp LS(T) &kp LS(M) &kp LS(A) &kp LS(N) &kp LS(A) &kp LS(G) &kp LS(E) &kp LS(R) &kp RET>;
             label = "DS_OPEN_DOC_MANAGER";
         };
+
         DS_gen_bom: DS_gen_bom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(G) &kp LS(E) &kp LS(N) &kp LS(E) &kp LS(R) &kp LS(A) &kp LS(T) &kp LS(E) &kp LS(D) &kp LS(W) &kp LS(G) &kp LS(B) &kp LS(O) &kp LS(M) &kp RET>;
             label = "DS_GEN_BOM";
         };
+
         DS_gen_pdf: DS_gen_pdf {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(P) &kp LS(U) &kp LS(B) &kp LS(L) &kp LS(I) &kp LS(S) &kp LS(H) &kp LS(P) &kp LS(D) &kp LS(F) &kp LS(S) &kp RET>;
             label = "DS_GEN_PDF";
         };
+
         DS_update_index_block: DS_update_index_block {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(U) &kp LS(P) &kp LS(D) &kp LS(A) &kp LS(T) &kp LS(E) &kp LS(I) &kp LS(N) &kp LS(D) &kp LS(E) &kp LS(X) &kp LS(B) &kp LS(L) &kp LS(O) &kp LS(C) &kp LS(K) &kp RET>;
             label = "DS_UPDATE_INDEX_BLOCK";
         };
+
         DS_edit_cherries: DS_edit_cherries {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(E) &kp LS(D) &kp LS(I) &kp LS(T) &kp LS(C) &kp LS(H) &kp LS(E) &kp LS(R) &kp LS(R) &kp LS(Y) &kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp RET>;
             label = "DS_EDIT_CHERRIES";
         };
+
         DS_dramanote: DS_dramanote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(D) &kp LS(R) &kp LS(A) &kp LS(M) &kp LS(A) &kp LS(N) &kp LS(O) &kp LS(T) &kp LS(E) &kp RET>;
             label = "DS_DRAMANOTE";
         };
+
         DS_undo: DS_undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(U) &kp LS(N) &kp LS(D) &kp LS(O) &kp RET &kp RET>;
             label = "DS_UNDO";
         };
+
         DS_redo: DS_redo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(R) &kp LS(E) &kp LS(D) &kp LS(O) &kp RET>;
             label = "DS_REDO";
         };
+
         DS_fix_text: DS_fix_text {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp T &kp E &kp X &kp T &kp S &kp T &kp Y &kp L &kp E &kp RET &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(N) &kp LS(D) &kp LS(A) &kp LS(R) &kp LS(D) &kp RET &kp LS(A) &kp LS(R) &kp LS(R) &kp O &kp M &kp LS(S) &kp DOT &kp S &kp H &kp X &kp RET &kp N0 &kp DOT &kp NUMBER_1 &kp NUMBER_2 &kp N5 &kp RET &kp N1 &kp RET &kp N0 &kp RET &kp LS(N) &kp RET &kp LS(N) &kp RET &kp LS(N) &kp RET>;
             label = "DS_FIX_TEXT";
         };
+
         DS_copy_at: DS_copy_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(C) &kp LS(O) &kp LS(P) &kp LS(Y) &kp AT &kp RET>;
             label = "DS_COPY_AT";
         };
+
         DS_close: DS_close {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -177,10 +198,10 @@
 
             label = "Base";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E     &kp R           &kp T        &kp Y            &kp U           &kp I      &kp O    &kp P          &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D     &kp F           &kp G        &kp H            &kp J           &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LCTRL   &kp Z  &kp X  &kp C     &kp V           &kp B        &kp N            &kp M           &kp COMMA  &kp DOT  &kp FSLH       &kp DEL
-                          &kp LGUI  &layer_1_and_3  &kp SPACE    &mt RSHFT ENTER  &layer_2_and_4  &kp RALT
+&kp ESCAPE  &kp Q  &kp W  &kp E            &kp R           &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P          &kp BSPC
+&kp TAB     &kp A  &kp S  &kp D            &kp F           &kp G        &kp H      &kp J           &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LCTRL   &kp Z  &kp X  &kp C            &kp V           &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH       &kp DEL
+                          &kp RIGHT_SHIFT  &layer_1_and_3  &kp SPACE    &kp ENTER  &layer_2_and_4  &kp RALT
             >;
         };
 
@@ -193,10 +214,10 @@
 
             label = "Lower";
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp BACKSPACE
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp CAPS  &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans    &trans
-                                    &kp LSHIFT    &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp BACKSPACE
+&kp LEFT_GUI  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp CAPS  &bt BT_CLR
+&trans        &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans    &trans
+                                          &kp LSHIFT    &trans        &kp SPACE       &kp RET   &trans    &kp RALT
             >;
         };
 
