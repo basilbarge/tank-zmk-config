@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_1_AND_3";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 3>;
+            bindings = <&mo 1>, <&mo 0>;
 
             tapping-term-ms = <400>;
         };
@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_2_AND_4";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 4>;
+            bindings = <&mo 2>, <&mo 3>;
 
             tapping-term-ms = <400>;
         };
@@ -235,17 +235,6 @@
 &trans  &trans     &trans     &trans                &kp LEFT_GUI           &trans       &trans     &trans            &trans             &trans          &kp BACKSLASH    &trans
                               &trans                &trans                 &kp SPACE    &kp RET    &trans            &kp RALT
             >;
-        };
-
-        Draftsight_PCU {
-            bindings = <
-&trans  &DS_fix_text          &DS_edit_cherries  &DS_gen_bom               &DS_gen_pdf  &DS_dramanote    &trans  &trans        &trans            &trans                  &trans     &trans
-&trans  &DS_move              &DS_copy           &DS_trim                  &DS_extend   &DS_fillet       &trans  &DS_save_all  &DS_fit_and_save  &DS_update_index_block  &DS_close  &trans
-&trans  &DS_open_doc_manager  &DS_copy_at        &DS_open_project_manager  &DS_redo     &DS_undo         &trans  &trans        &trans            &trans                  &trans     &trans
-                                                 &kp LSHIFT                &trans       &trans           &trans  &trans        &trans
-            >;
-
-            label = "DS";
         };
 
         Function_Layer {
