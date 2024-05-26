@@ -46,7 +46,7 @@
         compatible = "zmk,combos";
 
         toggle_gaming {
-            bindings = <&tog 4>;
+            bindings = <&tog 0>;
             key-positions = <37 40>;
         };
     };
@@ -111,15 +111,6 @@
             >;
 
             label = "Func";
-        };
-
-        Gaming {
-            bindings = <
-&trans          &trans  &trans  &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp TAB  &trans  &trans    &trans  &trans  &trans
-            >;
         };
     };
 
