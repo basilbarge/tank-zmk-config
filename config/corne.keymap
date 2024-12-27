@@ -100,7 +100,7 @@
             >;
         };
 
-        raise_layer {
+        Symbol_Layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | SHFT |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -109,10 +109,10 @@
 
             label = "Raise";
             bindings = <
-&trans  &trans                &kp EQUAL              &kp PLUS          &kp ASTERISK       &kp GRAVE    &kp BACKSLASH  &kp MINUS       &kp UNDERSCORE  &kp SLASH     &trans           &trans
-&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE    &kp PIPE       &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans                &trans                 &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans       &trans         &trans          &trans          &trans        &trans           &trans
-                                                     &trans            &trans             &kp SPACE    &kp RET        &trans          &trans
+&trans  &kp SQT          &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES     &kp PERIOD    &kp AMPERSAND  &kp MINUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
+&trans  &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL             &kp HASH      &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &kp CARET        &kp SLASH      &kp ASTERISK      &kp NON_US_BACKSLASH  &trans        &kp TILDE      &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
+                                        &trans            &trans                &kp SPACE     &kp RET        &trans      &trans
             >;
         };
 
